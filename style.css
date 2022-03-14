@@ -10,14 +10,16 @@ body {
 }
 
 header {
-  height: 60vh;
-  background: #1F2937;
+  height: 70vh;
+  background-image: url(project-blue-book-header.jpg);
+  background-size: cover;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   padding: 15px 15vw;
+  background: rgba(0,0,0,0.8);
 }
 
 nav .logo {
@@ -32,41 +34,108 @@ ul {
   list-style: none;
 }
 
-ul li {
+ul li a {
   color: #E5E7EB;
   font-size: 18px;
+  transition-duration: 0.5s;
+}
+
+ul li a:hover {
+  text-shadow: 0 0 2px white;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
 }
 
 header .info {
-  padding: 15px 15vw;
-  margin-top: 10vh;
   display: flex;
   gap: 10px;
+  background: rgba(0,0,0,0.5);
+  width: 80vw;
+  padding: 30px;
+  border-radius: 20px;
+  margin: 20vh auto 0 auto;
+  transition-duration: 2s;
+}
+
+@keyframes glow {
+  0%,100%{background: rgba(0,0,0,0.5);}
+  50%{background: rgba(0,0,0,0.7);}
+}
+
+@keyframes shadow {
+  0%,100%{background: rgba(233, 30, 99, 0.5);
+  box-shadow: 0;}
+  50%{  background: rgba(233, 30, 99, 0.8);
+    box-shadow: 0 0 10px white;}
+}
+
+header .info:hover {
+  box-shadow: 0 0 8px white;
+  animation-name: glow;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+header .info:hover .sign {
+  animation-name: shadow;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
 }
 
 header .info .heading {
+  font-family: cursive, sans-serif, monospace;
   font-size: 48px;
   color: #F9FAF8;
   font-weight: bolder;
+  text-shadow: 2px 2px #ff0057;
 }
 
 header .info .sub-text {
   font-size: 18px;
   color: #E5E7EB;
+  margin-top: 10px;
 }
 
 header .info img {
   width: 35vw;
+  opacity: 0;
+  animation-name: reveal;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  }
+
+@keyframes reveal {
+  from{opacity: 0;}
+  to{opacity: 1;}
 }
 
-header .info button {
-  background: #3882F6;
+header .info .sign {
+  display: inline-block;
+  background: rgba(233, 30, 99, 0.5);
+  font-size: 20px;
+  padding: 15px 30px;
+  border: 3px solid white;
+  border-radius: 25px;
+  margin-top: 30px;
+  transition-duration: 1s;
+}
+
+header .info .sign {
+  font-family: cursive, sans-serif, monospace;
   color: white;
   font-size: 20px;
-  padding: 10px 30px;
-  border: 0;
-  border-radius: 5px;
-  margin-top: 10px;
+  font-weight: bold;
+}
+
+header .info .sign:hover {
+  background: rgba(233, 30, 99, 0.8);
+  box-shadow: 0 0 10px white;
+  transform: translateY(-5px);
 }
 
 .info-cards {
@@ -78,6 +147,8 @@ header .info button {
 }
 
 .info-cards .heading {
+  width: 100vw;
+  text-align: center;
   font-size: 36px;
   color: #1F2937;
   font-weight: bolder;

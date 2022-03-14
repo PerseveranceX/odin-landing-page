@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: roboto, sans-serif;
+}
+
+header {
+  height: 60vh;
+  background: #1F2937;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 15vw;
+}
+
+nav .logo {
+  font-size: 24px;
+  color: #F9FAF8;
+  font-weight: bold;
+}
+ul {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+}
+
+ul li {
+  color: #E5E7EB;
+  font-size: 18px;
+}
+
+header .info {
+  padding: 15px 15vw;
+  margin-top: 10vh;
+  display: flex;
+  gap: 10px;
+}
+
+header .info .heading {
+  font-size: 48px;
+  color: #F9FAF8;
+  font-weight: bolder;
+}
+
+header .info .sub-text {
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+header .info img {
+  width: 35vw;
+}
+
+header .info button {
+  background: #3882F6;
+  color: white;
+  font-size: 20px;
+  padding: 10px 30px;
+  border: 0;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.info-cards {
+  height: 40vh;
+  padding: 0 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-cards .heading {
+  font-size: 36px;
+  color: #1F2937;
+  font-weight: bolder;
+  margin-top: 25px;
+}
+
+.info-cards .cards {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.info-cards .cards figure img {
+  border: 3px solid #3882F6;
+  border-radius: 10px;
+}
+
+.info-cards .cards figure figcaption {
+text-align: center;
+}
+
+section.quote {
+  height: 60vh;
+  background: #E5E7EB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.quote .quote {
+font-size: 36px;
+color: #1F2937;
+font-weight: lighter;
+font-style: italic;
+width: 60vw;
+}
+
+section.quote .sayer {
+text-align: right;
+font-weight: bold;
+}
+
+.action {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.action .call-to-action-box {
+  display: flex;
+  justify-content: space-around;
+  width: 70vw;
+  background: #3882F6;
+  padding: 50px 0;
+}
+
+.action .call-to-action-box .heading{
+  color: white;
+  font-weight: bold;
+}
+
+.action .call-to-action-box .sub-text{
+  color: #E5E7EB;
+}
+
+.action .call-to-action-box button{
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 20px;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+footer {
+  height: 80px;
+  background: #1F2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  color: #E5E7EB;
+  font-size: 18px;
+}

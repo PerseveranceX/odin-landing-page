@@ -141,8 +141,9 @@ header .info .sign:hover {
 }
 
 .info-cards {
-  height: 40vh;
+  min-height: 40vh;
   padding: 0 15vw;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;

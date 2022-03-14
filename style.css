@@ -7,6 +7,7 @@
 body {
   min-height: 100vh;
   font-family: roboto, sans-serif;
+  counter-reset: signed;
 }
 
 header {
@@ -144,6 +145,7 @@ header .info .sign:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: black;
 }
 
 .info-cards .heading {
@@ -153,21 +155,47 @@ header .info .sign:hover {
   color: #1F2937;
   font-weight: bolder;
   margin-top: 25px;
+  color: #F9FAF8;
 }
 
-.info-cards .cards {
+.info-cards .counters {
   display: flex;
-  gap: 15px;
-  margin-top: 20px;
+  gap: 150px;
+  margin-top: 80px;
+  text-align: center;
 }
 
-.info-cards .cards figure img {
-  border: 3px solid #3882F6;
-  border-radius: 10px;
+.info-cards .counters .count {
+font-size: 50px;
+font-weight: bold;
+color: white;
 }
 
-.info-cards .cards figure figcaption {
-text-align: center;
+.info-cards .counters i {
+color: white;
+}
+
+.info-cards .counters .text {
+font-size: 20px;
+font-weight: bold;
+position: relative;
+color: white;
+}
+
+.info-cards .counters .text::before {
+content:"";
+width: 55px;
+height: 2px;
+background: white;
+position: absolute;
+left: 50%;
+top: 0;
+transform: translate(-27.5px, -10px);
+}
+
+.info-cards .counters i,
+.info-cards .counters .count {
+    margin-bottom: 10px;
 }
 
 section.quote {

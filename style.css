@@ -17,6 +17,12 @@ header {
   background-size: cover;
 }
 
+@media(max-width: 600px) {
+header {
+background-position: 28%;
+}
+}
+
 nav {
   display: flex;
   justify-content: space-between;

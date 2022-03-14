@@ -11,7 +11,8 @@ body {
 }
 
 header {
-  height: 70vh;
+  min-height: 90vh;
+  padding-bottom: 20px;
   background-image: url(project-blue-book-header.jpg);
   background-size: cover;
 }

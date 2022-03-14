@@ -294,6 +294,16 @@ footer {
 }
 
 footer p {
-  color: #E5E7EB;
+  color: white;
   font-size: 18px;
+}
+
+footer img {
+  width: 30px;
+  transform: scaleX(-1);
+  margin-left: 5px;
+}
+
+footer a {
+  color: white;
 }

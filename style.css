@@ -198,25 +198,46 @@ transform: translate(-27.5px, -10px);
     margin-bottom: 10px;
 }
 
-section.quote {
+section.award {
   height: 60vh;
   background: #E5E7EB;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
 
-section.quote .quote {
-font-size: 36px;
-color: #1F2937;
-font-weight: lighter;
-font-style: italic;
-width: 60vw;
+section.award img {
+  margin-top: 20px;
+  width: 120px;
+  height: 240px;
 }
 
-section.quote .sayer {
-text-align: right;
-font-weight: bold;
+section.award .heading {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: cursive, sans-serif, monospace;
+}
+
+section.award .description {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: cursive, sans-serif, monospace;
+  color: #664700;
+}
+
+section.award .episode {
+  font-size: 25px;
+      font-weight: bold;
+      font-family: cursive, sans-serif, monospace;
+      color: #664700;
+      text-shadow: 0 0 1px;
+}
+
+section.award .episode span {
+color: black;
+font-family: roboto, sans-serif, monospace;
 }
 
 .action {
